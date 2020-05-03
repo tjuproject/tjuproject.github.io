@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>健康知识调查</title>
+</head>
+
+<body leftmargin="30" >
+<center><h2>第一部分 基本信息</h2></center>
+<script type="text/javascript">
+        var tempArray=new Array();
+		var resultArry=new Array();
+		function Calc(x) {
+		if (x==0){
+		for(var i=0;i<tempArray.length;i++){
+		var result=tempArray[i]
+			if(i%10==0 && i>0){
+				resultArry.push("<br>"+result);
+			}
+			else{
+				resultArry.push(result);
+			}
+        }
+		document.write("<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center><h1>"+resultArry+"<h1></center>");
+		var resultArray=new Array();
+		}
+		else{
+		tempArray.push(x);   
+			}
+		}
+</script>
+
+
+<form>
+<font size="+2">
+1.你的性别？<br />
+<input type="radio" name="sex" value="male" style="width:35px;height:35px" onclick="Calc(1)">男
+<input type="radio" name="sex" value="female" style="width:35px;height:35px" onclick="Calc(2)">女
+<br /><br />
+
+2.你的年龄？<br />
+<input type="radio" name="age" value="17" style="width:35px;height:35px" onclick="Calc(3)" >20岁及以下
+<input type="radio" name="age" value="18-30" style="width:35px;height:35px" onclick="Calc(4)" >21-25岁
+<input type="radio" name="age" value="31-50" style="width:35px;height:35px" onclick="Calc(5)" >26-30岁
+<input type="radio" name="age" value="51" style="width:35px;height:35px" onclick="Calc(6)" >31-35岁
+<input type="radio" name="age" value="31-50" style="width:35px;height:35px" onclick="Calc(5)" >36-40岁
+<input type="radio" name="age" value="51" style="width:35px;height:35px" onclick="Calc(6)" >40岁以上
+<br /><br />
+
+3.你目前的受教育状况？<br />
+<input type="radio" name="education" value="1" style="width:35px;height:35px" onclick="Calc(7)" >高中及以下
+<input type="radio" name="education" value="2" style="width:35px;height:35px" onclick="Calc(8)" >专科
+<input type="radio" name="education" value="3" style="width:35px;height:35px" onclick="Calc(9)" >本科
+<input type="radio" name="education" value="4" style="width:35px;height:35px" onclick="Calc(10)" >硕士及以上
+<br /><br />
+
+4.你所从事的行业是否与医学相关？<br />
+<input type="radio" name="industry" value="yes" style="width:35px;height:35px" onclick="Calc(11)" >是
+<input type="radio" name="industry" value="no" style="width:35px;height:35px" onclick="Calc(12)" >否
+<br /><br />
+
+5.你是否听说过马方综合征？<br />
+<input type="radio" name="knowledge" value="yes" style="width:35px;height:35px" onclick="Calc(13)" >是
+<input type="radio" name="knowledge" value="no" style="width:35px;height:35px" onclick="Calc(14)" >否
+<br /><br />
+
+6.你每天的上网时长？<br />
+<input type="radio" name="time" value="1" style="width:35px;height:35px" onclick="Calc(15)" >2小时以下
+<input type="radio" name="time" value="2" style="width:35px;height:35px" onclick="Calc(16)" >2-4小时
+<input type="radio" name="time" value="3" style="width:35px;height:35px" onclick="Calc(17)" >4-6小时
+<input type="radio" name="time" value="4" style="width:35px;height:35px" onclick="Calc(18)" >6-8小时
+<input type="radio" name="time" value="5" style="width:35px;height:35px" onclick="Calc(19)" >8小时以上
+<br /><br />
+<b>&nbsp题目7至题目13</b><br />
+【1->7】表示【非常不同意->非常同意】<br><br>
+7.我认为微博所提供的信息是可信的。<br>
+<input type='radio' name='L1' value='1'   style='width:35px;height:35px' onclick='Calc(20)'>1
+<input type='radio' name='L1' value='2'   style='width:35px;height:35px' onclick='Calc(21)'>2 
+<input type='radio' name='L1' value='3'   style='width:35px;height:35px' onclick='Calc(22)'>3 
+<input type='radio' name='L1' value='4'   style='width:35px;height:35px' onclick='Calc(23)'>4 
+<input type='radio' name='L1' value='5'   style='width:35px;height:35px' onclick='Calc(24)'>5 
+<input type='radio' name='L1' value='6'   style='width:35px;height:35px' onclick='Calc(23)'>6
+<input type='radio' name='L1' value='7'   style='width:35px;height:35px' onclick='Calc(24)'>7 
+<br><br>                                                                                                                                                   8.我认为微博所提供的信息是准确的。<br>
+<input type='radio' name='L2' value='1'   style='width:35px;height:35px' onclick='Calc(25)'>1 
+<input type='radio' name='L2' value='2'   style='width:35px;height:35px' onclick='Calc(26)'>2 
+<input type='radio' name='L2' value='3'   style='width:35px;height:35px' onclick='Calc(27)'>3 
+<input type='radio' name='L2' value='4'   style='width:35px;height:35px' onclick='Calc(28)'>4 
+<input type='radio' name='L2' value='5'   style='width:35px;height:35px' onclick='Calc(29)'>5 
+<input type='radio' name='L2' value='6'   style='width:35px;height:35px' onclick='Calc(28)'>6 
+<input type='radio' name='L2' value='7'   style='width:35px;height:35px' onclick='Calc(29)'>7 <br> <br>                  
+9.我认为微博所提供的信息是公正的。<br>
+<input type='radio' name='L3' value='1'   style='width:35px;height:35px' onclick='Calc(30)'>1 
+<input type='radio' name='L3' value='2'   style='width:35px;height:35px' onclick='Calc(31)'>2 
+<input type='radio' name='L3' value='3'   style='width:35px;height:35px' onclick='Calc(32)'>3 
+<input type='radio' name='L3' value='4'   style='width:35px;height:35px' onclick='Calc(33)'>4 
+<input type='radio' name='L3' value='5'   style='width:35px;height:35px' onclick='Calc(34)'>5
+<input type='radio' name='L3' value='4'   style='width:35px;height:35px' onclick='Calc(33)'>6 
+<input type='radio' name='L3' value='5'   style='width:35px;height:35px' onclick='Calc(34)'>7 <br> <br>
+10.我认为微博所提供的信息是深入的。<br>
+<input type='radio' name='L4' value='1'   style='width:35px;height:35px' onclick='Calc(35)'>1 
+<input type='radio' name='L4' value='2'   style='width:35px;height:35px' onclick='Calc(36)'>2 
+<input type='radio' name='L4' value='3'   style='width:35px;height:35px' onclick='Calc(37)'>3 
+<input type='radio' name='L4' value='4'   style='width:35px;height:35px' onclick='Calc(38)'>4 
+<input type='radio' name='L4' value='5'   style='width:35px;height:35px' onclick='Calc(39)'>5
+<input type='radio' name='L4' value='4'   style='width:35px;height:35px' onclick='Calc(38)'>6 
+<input type='radio' name='L4' value='5'   style='width:35px;height:35px' onclick='Calc(39)'>7 <br>  <br>                    
+11.我非常愿意阅读健康相关信息。<br>
+<input type='radio' name='L5' value='1'   style='width:35px;height:35px' onclick='Calc(40)'>1 
+<input type='radio' name='L5' value='2'   style='width:35px;height:35px' onclick='Calc(41)'>2 
+<input type='radio' name='L5' value='3'   style='width:35px;height:35px' onclick='Calc(42)'>3 
+<input type='radio' name='L5' value='4'   style='width:35px;height:35px' onclick='Calc(43)'>4 
+<input type='radio' name='L5' value='5'   style='width:35px;height:35px' onclick='Calc(44)'>5
+<input type='radio' name='L5' value='4'   style='width:35px;height:35px' onclick='Calc(43)'>6 
+<input type='radio' name='L5' value='5'   style='width:35px;height:35px' onclick='Calc(44)'>7 <br><br>
+12.我认为健康相关信息很有趣。<br>
+<input type='radio' name='L6' value='1'   style='width:35px;height:35px' onclick='Calc(45)'>1 
+<input type='radio' name='L6' value='2'   style='width:35px;height:35px' onclick='Calc(46)'>2 
+<input type='radio' name='L6' value='3'   style='width:35px;height:35px' onclick='Calc(47)'>3 
+<input type='radio' name='L6' value='4'   style='width:35px;height:35px' onclick='Calc(48)'>4 
+<input type='radio' name='L6' value='5'   style='width:35px;height:35px' onclick='Calc(49)'>5
+<input type='radio' name='L6' value='4'   style='width:35px;height:35px' onclick='Calc(48)'>6 
+<input type='radio' name='L6' value='5'   style='width:35px;height:35px' onclick='Calc(49)'>7 <br><br>                        
+13.我很喜欢阅读健康相关信息。<br>
+<input type='radio' name='L7' value='1'   style='width:35px;height:35px' onclick='Calc(50)'>1 
+<input type='radio' name='L7' value='2'   style='width:35px;height:35px' onclick='Calc(51)'>2 
+<input type='radio' name='L7' value='3'   style='width:35px;height:35px' onclick='Calc(52)'>3 
+<input type='radio' name='L7' value='4'   style='width:35px;height:35px' onclick='Calc(53)'>4 
+<input type='radio' name='L7' value='5'   style='width:35px;height:35px' onclick='Calc(54)'>5
+<input type='radio' name='L7' value='4'   style='width:35px;height:35px' onclick='Calc(53)'>6 
+<input type='radio' name='L7' value='5'   style='width:35px;height:35px' onclick='Calc(54)'>7 <br><br>                       
+
+14.请结合你此时此刻的具体情况对下述几种情绪及其具体程度作出选择<br />
+<table style="font-size:36px"> 
+<tr>
+  <td></td>
+  <td>几乎没有</td>
+  <td>有一点</td>
+  <td>中度</td>
+  <td>比较强烈</td>
+  <td>极其强烈</td>
+</tr>
+<tr> 
+  <td>快乐的</td>
+  <td><center><input type="radio" name="m1" value="1" style="width:35px;height:35px" onclick="Calc(60)" >1</center></td>
+  <td><center><input type="radio" name="m1" value="1" style="width:35px;height:35px" onclick="Calc(61)" >2</center></td>
+  <td><center><input type="radio" name="m1" value="1" style="width:35px;height:35px" onclick="Calc(62)" >3</center></td>
+  <td><center><input type="radio" name="m1" value="1" style="width:35px;height:35px" onclick="Calc(63)" >4</center></td>
+  <td><center><input type="radio" name="m1" value="1" style="width:35px;height:35px" onclick="Calc(64)" >5</center></td>
+  <td><center><input type="radio" name="m1" value="1" style="width:35px;height:35px" onclick="Calc(63)" >6</center></td>
+  <td><center><input type="radio" name="m1" value="1" style="width:35px;height:35px" onclick="Calc(64)" >7</center></td>
+</tr>
+<tr> 
+  <td>喜悦的</td>
+  <td><center><input type="radio" name="m3" value="1" style="width:35px;height:35px" onclick="Calc(65)" >1</center></td>
+  <td><center><input type="radio" name="m3" value="1" style="width:35px;height:35px" onclick="Calc(66)" >2</center></td>
+  <td><center><input type="radio" name="m3" value="1" style="width:35px;height:35px" onclick="Calc(67)" >3</center></td>
+  <td><center><input type="radio" name="m3" value="1" style="width:35px;height:35px" onclick="Calc(68)" >4</center></td>
+  <td><center><input type="radio" name="m3" value="1" style="width:35px;height:35px" onclick="Calc(69)" >5</center></td>
+</tr>
+<tr> 
+  <td>欢乐的</td>
+  <td><center><input type="radio" name="m4" value="1" style="width:35px;height:35px" onclick="Calc(70)" >1</center></td>
+  <td><center><input type="radio" name="m4" value="1" style="width:35px;height:35px" onclick="Calc(71)" >2</center></td>
+  <td><center><input type="radio" name="m4" value="1" style="width:35px;height:35px" onclick="Calc(72)" >3</center></td>
+  <td><center><input type="radio" name="m4" value="1" style="width:35px;height:35px" onclick="Calc(73)" >4</center></td>
+  <td><center><input type="radio" name="m4" value="1" style="width:35px;height:35px" onclick="Calc(74)" >5</center></td>
+</tr>
+<tr> 
+  <td>兴奋的</td>
+  <td><center><input type="radio" name="m5" value="1" style="width:35px;height:35px" onclick="Calc(75)" >1</center></td>
+  <td><center><input type="radio" name="m5" value="1" style="width:35px;height:35px" onclick="Calc(76)" >2</center></td>
+  <td><center><input type="radio" name="m5" value="1" style="width:35px;height:35px" onclick="Calc(77)" >3</center></td>
+  <td><center><input type="radio" name="m5" value="1" style="width:35px;height:35px" onclick="Calc(78)" >4</center></td>
+  <td><center><input type="radio" name="m5" value="1" style="width:35px;height:35px" onclick="Calc(79)" >5</center></td>
+</tr>
+<tr> 
+  <td>活泼的</td>
+  <td><center><input type="radio" name="m7" value="1" style="width:35px;height:35px" onclick="Calc(80)" >1</center></td>
+  <td><center><input type="radio" name="m7" value="1" style="width:35px;height:35px" onclick="Calc(81)" >2</center></td>
+  <td><center><input type="radio" name="m7" value="1" style="width:35px;height:35px" onclick="Calc(82)" >3</center></td>
+  <td><center><input type="radio" name="m7" value="1" style="width:35px;height:35px" onclick="Calc(83)" >4</center></td>
+  <td><center><input type="radio" name="m7" value="1" style="width:35px;height:35px" onclick="Calc(84)" >5</center></td>
+</tr>
+<tr> 
+  <td>精力充沛的</td>
+  <td><center><input type="radio" name="m8" value="1" style="width:35px;height:35px" onclick="Calc(85)" >1</center></td>
+  <td><center><input type="radio" name="m8" value="1" style="width:35px;height:35px" onclick="Calc(86)" >2</center></td>
+  <td><center><input type="radio" name="m8" value="1" style="width:35px;height:35px" onclick="Calc(87)" >3</center></td>
+  <td><center><input type="radio" name="m8" value="1" style="width:35px;height:35px" onclick="Calc(88)" >4</center></td>
+  <td><center><input type="radio" name="m8" value="1" style="width:35px;height:35px" onclick="Calc(89)" >5</center></td>
+</tr>
+<tr> 
+  <td>平静的</td>
+  <td><center><input type="radio" name="m9" value="1" style="width:35px;height:35px" onclick="Calc(90)" >1</center></td>
+  <td><center><input type="radio" name="m9" value="1" style="width:35px;height:35px" onclick="Calc(91)" >2</center></td>
+  <td><center><input type="radio" name="m9" value="1" style="width:35px;height:35px" onclick="Calc(92)" >3</center></td>
+  <td><center><input type="radio" name="m9" value="1" style="width:35px;height:35px" onclick="Calc(93)" >4</center></td>
+  <td><center><input type="radio" name="m9" value="1" style="width:35px;height:35px" onclick="Calc(94)" >5</center></td>
+</tr>
+<tr> 
+  <td>紧张的</td>
+  <td><center><input type="radio" name="m10" value="1" style="width:35px;height:35px" onclick="Calc(95)" >1</center></td>
+  <td><center><input type="radio" name="m10" value="1" style="width:35px;height:35px" onclick="Calc(96)" >2</center></td>
+  <td><center><input type="radio" name="m10" value="1" style="width:35px;height:35px" onclick="Calc(97)" >3</center></td>
+  <td><center><input type="radio" name="m10" value="1" style="width:35px;height:35px" onclick="Calc(98)" >4</center></td>
+  <td><center><input type="radio" name="m10" value="1" style="width:35px;height:35px" onclick="Calc(99)" >5</center></td>
+</tr>
+<tr> 
+  <td>不安的</td>
+  <td><center><input type="radio" name="m11" value="1" style="width:35px;height:35px" onclick="Calc(100)" >1</center></td>
+  <td><center><input type="radio" name="m11" value="1" style="width:35px;height:35px" onclick="Calc(101)" >2</center></td>
+  <td><center><input type="radio" name="m11" value="1" style="width:35px;height:35px" onclick="Calc(102)" >3</center></td>
+  <td><center><input type="radio" name="m11" value="1" style="width:35px;height:35px" onclick="Calc(103)" >4</center></td>
+  <td><center><input type="radio" name="m11" value="1" style="width:35px;height:35px" onclick="Calc(104)" >5</center></td>
+</tr>
+<tr> 
+  <td>放松的</td>
+  <td><center><input type="radio" name="m12" value="1" style="width:35px;height:35px" onclick="Calc(105)" >1</center></td>
+  <td><center><input type="radio" name="m12" value="1" style="width:35px;height:35px" onclick="Calc(106)" >2</center></td>
+  <td><center><input type="radio" name="m12" value="1" style="width:35px;height:35px" onclick="Calc(107)" >3</center></td>
+  <td><center><input type="radio" name="m12" value="1" style="width:35px;height:35px" onclick="Calc(108)" >4</center></td>
+  <td><center><input type="radio" name="m12" value="1" style="width:35px;height:35px" onclick="Calc(109)" >5</center></td>
+</tr>
+<tr> 
+  <td>担心的</td>
+  <td><center><input type="radio" name="m14" value="1" style="width:35px;height:35px" onclick="Calc(110)" >1</center></td>
+  <td><center><input type="radio" name="m14" value="1" style="width:35px;height:35px" onclick="Calc(111)" >2</center></td>
+  <td><center><input type="radio" name="m14" value="1" style="width:35px;height:35px" onclick="Calc(112)" >3</center></td>
+  <td><center><input type="radio" name="m14" value="1" style="width:35px;height:35px" onclick="Calc(113)" >4</center></td>
+  <td><center><input type="radio" name="m14" value="1" style="width:35px;height:35px" onclick="Calc(114)" >5</center></td>
+</tr>
+</table>
+
+</font>
+</form> 
+<br><br><br>
+<script language="javascript">
+
+	var rand= Math.round(Math.random());
+	document.write("<br><br><center><h2>第二部分 调研内容</h2></center>")
+	
+	if (rand==0)
+	{
+		document.write("<p><b>介绍</b><br>&nbsp&nbsp&nbsp&nbsp&nbsp马方综合征又称为马凡综合征，为一种遗传性结缔组织疾病，为常染色体显性遗传，患病特征为四肢、手指、脚趾细长不匀称，身高明显超出常人，伴有心血管系统异常，特别是合并的心脏瓣膜异常和主动脉瘤。该病同时可能影响其他器官，包括肺、眼、硬脊膜、硬颚等。<br>临床表现:<br>1.骨骼肌肉系统<br>主要有四肢细长，蜘蛛指(趾)，双臂平伸指距大于身长，双手下垂过膝，上半身比下半身长。 长头畸形、面窄、高腭弓、耿且低位。皮下脂肪少，肌肉不发达，胸、腹、臂皮肤皱纹。<br>2.眼<br>主要有晶状体脱位或半脱位、高度近视、白内障等。男性多于女性。<br>3.心血管系统<br>约80%的患者伴有先天性心血管畸形。</p>")
+	}
+	
+	
+	var rand1 = Math.round(Math.random())
+	var rand2 = Math.round(Math.random())
+	
+	
+	if(rand==0){
+		Calc('Y')
+	}
+	else{
+		Calc('N')		
+	}
+	
+	if(rand1==0){
+		Calc('L')
+			}
+	else{
+		Calc('H')
+	}
+	
+	if(rand2==0){
+		Calc('L')
+			}
+	else{
+		Calc('H')
+	}
+	
+	
+	document.write("<h2>小调查：请对下列问题进行判断</h2><font size=5> 1.马方综合征为遗传性疾病。<br>            <input type='radio' name='Q1' value='1' style='width:35px;height:35px' onclick='Calc(115)'>正确           <input type='radio' name='Q1' value='0'style='width:35px;height:35px' onclick='Calc(116)'>错误            <input type='radio' name='Q1' value='-1' style='width:35px;height:35px' onclick='Calc(117)'>不知道<br><br>                                2.马方综合征患者通常患有心血管疾病。<br>          <input type='radio' name='Q2' value='1' style='width:35px;height:35px' onclick='Calc(118)'>正确          <input type='radio' name='Q2' value='0' style='width:35px;height:35px' onclick='Calc(119)'>错误          <input type='radio' name='Q2' value='-1' style='width:35px;height:35px' onclick='Calc(120)'>不知道<br><br>                                 3.马方综合征患者中，患有眼部疾病的女性多于男性。<br>           <input type='radio' name='Q3' value='1' style='width:35px;height:35px' onclick='Calc(121)'>正确           <input type='radio' name='Q3' value='0' style='width:35px;height:35px' onclick='Calc(122)'>错误           <input type='radio' name='Q3' value='-1' style='width:35px;height:35px' onclick='Calc(123)'>不知道<br></font>")
+	
+	document.write('<h2><br>下面有一则关于马方综合征的微博消息，请在下列假设场景中以平时的速度阅读该信息</h2><br><b>来源评级</b>由微博专家组根据博主以往发布的足量微博数据进行分析判定，评级为1-5颗星。<br><b>内容评级</b>由微博专家组通过分析信息的结构、内容与标题的相关性以及掌握的相关知识进行评估，评级为1-5颗星。<br><br>')
+	if(rand1==0){
+		if(rand2==0){
+			document.write('<img src= "p00.PNG" height="910" width="960" / ><br>')
+		}
+		else{
+			document.write('<img src= "p01.PNG" height="910" width="960" / > <br>')
+		}
+	}
+	else{
+		if(rand2==0){
+			document.write('<img src= "p10.PNG" height="910" width="960" / > <br>')
+		}
+		else{
+			document.write('<img src= "p11.PNG" height="910" width="960" / > <br>')
+		}
+	}
+	question = "<font size=5>1.看到来源评级，我觉得信息来源是可靠的<br><input type='radio' name='1' value='1'   style='width:35px;height:35px' onclick='Calc(124)'>1 <input type='radio' name='1' value='2'  style='width:35px;height:35px' onclick='Calc(125)'>2 <input type='radio' name='1' value='3'  style='width:35px;height:35px' onclick='Calc(126)'>3 <input type='radio' name='1' value='4'  style='width:35px;height:35px' onclick='Calc(127)'>4 <input type='radio' name='1' value='5'  <input type='radio' name='1' value='6'  style='width:35px;height:35px' onclick='Calc(127)'>6 <input type='radio' name='1' value='7' style='width:35px;height:35px' onclick='Calc(128)'>7 <br><br>                                                                                                                                                                                        2.看到内容评级，我觉得信息内容是可靠的<br><input type='radio' name='2' value='1'  style='width:35px;height:35px' onclick='Calc(129)'>1 <input type='radio' name='2' value='2'    style='width:35px;height:35px' onclick='Calc(130)'>  2 <input type='radio' name='2' value='3'  style='width:35px;height:35px' onclick='Calc(131)'>3<input type='radio' name='2' value='4'  style='width:35px;height:35px' onclick='Calc(132)'>4 <input type='radio' name='2' value='5'  style='width:35px;height:35px' onclick='Calc(133)'>5            <input type='radio' name='2' value='6'  style='width:35px;height:35px' onclick='Calc(132)'>6 <input type='radio' name='2' value='7'  style='width:35px;height:35px' onclick='Calc(133)'>7       <br><br>                                                                                                                                                                       3.我觉得这则信息是可信的<br><input type='radio' name='3' value='1'  style='width:35px;height:35px' onclick='Calc(134)'>1 <input type='radio' name='3' value='2'  style='width:35px;height:35px' onclick='Calc(135)'>2 <input type='radio' name='3' value='3'  style='width:35px;height:35px' onclick='Calc(136)'>3 <input type='radio' name='3' value='4'  style='width:35px;height:35px' onclick='Calc(137)'>4     <input type='radio' name='3' value='5'   style='width:35px;height:35px' onclick='Calc(138)'>5 <input type='radio' name='3' value='6'  style='width:35px;height:35px' onclick='Calc(137)'>6     <input type='radio' name='3' value='7'   style='width:35px;height:35px' onclick='Calc(138)'>7 <br><br>                                                                                                                                                                        4.我觉得这则信息是真实的<br><input type='radio' name='4' value='1'   style='width:35px;height:35px' onclick='Calc(139)'>1 <input type='radio' name='4' value='2'  style='width:35px;height:35px' onclick='Calc(140)'>2 <input type='radio' name='4' value='3'  style='width:35px;height:35px' onclick='Calc(141)'>3  <input type='radio' name='4' value='4'  style='width:35px;height:35px' onclick='Calc(142)'>4 <input type='radio' name='4' value='5'  style='width:35px;height:35px' onclick='Calc(143)'>5 <input type='radio' name='4' value='6'  style='width:35px;height:35px' onclick='Calc(142)'>6 <input type='radio' name='4' value='7'  style='width:35px;height:35px' onclick='Calc(143)'>7<br><br>                                                                                                                                                                            5.我觉得这则信息是可靠的<br><input type='radio' name='5' value='1'  style='width:35px;height:35px' onclick='Calc(144)'>1<input type='radio' name='5' value='2'  style='width:35px;height:35px' onclick='Calc(145)'>2<input type='radio' name='5' value='3'  style='width:35px;height:35px' onclick='Calc(146)'>3<input type='radio' name='5' value='4'  style='width:35px;height:35px' onclick='Calc(147)'>4 <input type='radio' name='5' value='5'  style='width:35px;height:35px' onclick='Calc(148)'>5   <input type='radio' name='5' value='6'  style='width:35px;height:35px' onclick='Calc(147)'>6 <input type='radio' name='5' value='7'  style='width:35px;height:35px' onclick='Calc(148)'>7<br><br>                                                                                                                             6.我会阅读这则消息<br><input type='radio' name='6' value='1'  style='width:35px;height:35px' onclick='Calc(149)'>1<input type='radio' name='6' value='2'   style='width:35px;height:35px' onclick='Calc(150)'>2 <input type='radio' name='6' value='3'  style='width:35px;height:35px' onclick='Calc(151)'>3 <input type='radio' name='6' value='4'   style='width:35px;height:35px' onclick='Calc(152)'>4 <input type='radio' name='6' value='5'   style='width:35px;height:35px' onclick='Calc(153)'>5                     <input type='radio' name='6' value='6'   style='width:35px;height:35px' onclick='Calc(152)'>6 <input type='radio' name='6' value='7'   style='width:35px;height:35px' onclick='Calc(153)'>7 <br><br>                                                                                                                                                                          7.我会点赞这则消息<br><input type='radio' name='7' value='1'  style='width:35px;height:35px' onclick='Calc(154)'>1 <input type='radio' name='7' value='2'   style='width:35px;height:35px' onclick='Calc(155)'>2 <input type='radio' name='7' value='3'   style='width:35px;height:35px' onclick='Calc(156)'>3 <input type='radio' name='7' value='4'   style='width:35px;height:35px' onclick='Calc(157)'>4 <input type='radio' name='7' value='5'   style='width:35px;height:35px' onclick='Calc(158)'>5  <input type='radio' name='7' value='6'   style='width:35px;height:35px' onclick='Calc(157)'>6 <input type='radio' name='7' value='7'   style='width:35px;height:35px' onclick='Calc(158)'>7 <br><br>                                                                                                                                                                          8.我会对这则消息发表支持性评论<br><input type='radio' name='8' value='1'  style='width:35px;height:35px' onclick='Calc(159)'>1 <input type='radio' name='8' value='2'   style='width:35px;height:35px' onclick='Calc(160)'>2 <input type='radio' name='8' value='3'   style='width:35px;height:35px' onclick='Calc(161)'>3<input type='radio' name='8' value='4'  style='width:35px;height:35px' onclick='Calc(162)'>4 <input type='radio' name='8' value='5'   style='width:35px;height:35px' onclick='Calc(163)'>5              <input type='radio' name='8' value='6'  style='width:35px;height:35px' onclick='Calc(162)'>6 <input type='radio' name='8' value='7'   style='width:35px;height:35px' onclick='Calc(163)'>7 <br><br>                                                                                                                                                                        9.我会对这则消息发表反对性评论<br><input type='radio' name='9' value='1'  style='width:35px;height:35px' onclick='Calc(164)'>1 <input type='radio' name='9' value='2'   style='width:35px;height:35px' onclick='Calc(165)'>2 <input type='radio' name='9' value='3'   style='width:35px;height:35px' onclick='Calc(166)'>3 <input type='radio' name='9' value='4'   style='width:35px;height:35px' onclick='Calc(167)'>4 <input type='radio' name='9' value='5'   style='width:35px;height:35px' onclick='Calc(168)'>5      <input type='radio' name='9' value='6'   style='width:35px;height:35px' onclick='Calc(167)'>6 <input type='radio' name='9' value='7'   style='width:35px;height:35px' onclick='Calc(168)'>7 <br><br>                                                                                                                                                  10.我会转发这则消息<br><input type='radio' name='10' value='1'  style='width:35px;height:35px' onclick='Calc(169)'>1 <input type='radio' name='10' value='2'   style='width:35px;height:35px' onclick='Calc(170)'>2 <input type='radio' name='10' value='3'   style='width:35px;height:35px' onclick='Calc(171)'>3 <input type='radio' name='10' value='4'   style='width:35px;height:35px' onclick='Calc(172)'>4 <input type='radio' name='10' value='5'   style='width:35px;height:35px' onclick='Calc(173)'>5              <input type='radio' name='10' value='6'   style='width:35px;height:35px' onclick='Calc(172)'>6 <input type='radio' name='10' value='7'   style='width:35px;height:35px' onclick='Calc(173)'>7 <br><br><font>"
+	
+	document.write('<h3>&nbsp请回答下列问题<br>【1->7】分别表示【非常不同意->非常同意】</h3>'+question)
+
+</script>
+
+<h2>完成问题后点击提交生成序列号，请复制粘贴到问卷星中</h2><br />
+<center><input type="button" value="提交" style="width:200px;height:120px;font-size:36px" onclick="Calc(0)"  /></center><br /><br /><br>
+
+
+<script language="javascript">
+function Show(){
+	document.write(Calc(0))
+	
+	}
+</script>
+</body>
+</html>
